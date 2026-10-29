@@ -8,12 +8,14 @@ class FRC:
       self.rota()
     return app
   
-  def conteudo():
-    return("Despesas pessoais")
+  def conteudo(self):
+    self.cntd = "Despesas pessoais"
+    return(self.cntd)
 
-  def rota():
-    conteudo()
-    self.app.add_url_rule(
+  def rota(self):
+    self.rt = self.app.add_url_rule(
             "/",
             view_func=self.conteudo
         )
+    
+frc_um = FRC()
