@@ -18,4 +18,4 @@ class FRC:
             view_func=self.conteudo
         )
     
-frc_um = FRC()
+
